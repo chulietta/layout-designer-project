@@ -1,0 +1,54 @@
+header {
+    display: flex;
+    background: #ffffff;
+    height: 50px;
+    padding: 0 10px 0 10px;
+}
+
+#logo-part {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-img {
+    width: 30px;
+    height: 30px;
+    padding-right: 10px;
+}
+
+p.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+#menu {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
