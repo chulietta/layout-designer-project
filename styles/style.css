@@ -20,8 +20,9 @@ header {
 }
 
 p.logo-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     color: black;
 }
 
@@ -38,7 +39,9 @@ p.logo-text {
 }
 
 .menu-item a {
-    padding-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    padding-left: 20px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -51,4 +54,54 @@ p.logo-text {
 
 .flex-grow-2 {
     flex-grow: 2;
+}
+
+#banner {
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    background-image: url(/images/banner.png);
+    background-position-x: center;
+    background-position-y: -500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.banner-h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-seri;
+    color: white;
+    font-size: 52px;
+    font-weight: 500;
+    margin: 0em;
+}
+
+.banner-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0em;
+}
+
+.banner-btn {
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: white;
+    background: transparent;
+    padding: 15px;
+    margin: 20px;
+}
+
+.banner-btn-text {
+    font-family: Verdana, Geneva, Tahoma, sans-seri;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 0 auto;
 }
