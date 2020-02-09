@@ -34,7 +34,7 @@
                 <p class="banner-text flex-grow-1">Место, откуда не хочется улетать</p>
             </div>
             <div>
-                <button class="banner-btn flex-grow-1"><p class="banner-btn-text">Забронировать</p></button>
+                <button class="banner-btn flex-grow-1"><p class="banner-btn-text"><a href="#contact-form">Забронировать</a></p></button>
             </div>
         </div>
         <div class="section">
@@ -92,7 +92,56 @@
             </div>
 
         </div>
+        <div class="section bg-gray">
+            <div class="feedback">
+                <h2>
+                    <a name="contact-form"></a> Оставьте заявку сегодня!</h2>
+                <form class="feedback-form">
+                    <fieldset>
+                        <legend class="green-legend">
+                            Параметры квартиры
+                        </legend>
+                        <div class="form-item">
+                            <label for="rooms" class="labels">Количество комнат:</label>
+                            <select id="rooms" class="param-fields">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                        </div>
+                        <div class="form-item">
+                            <label for="remont" class="labels">Отделка:</label>
+                            <select id="remont" class="param-fields">
+                                    <option>Без отделки</option>
+                                    <option>Предчистовая отделка</option>
+                                    <option>Чистовая отделка</option>
+                                </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="green-legend">
+                            Контактная информация
+                        </legend>
+                        <div class="form-item">
+                            <label for="name" class="labels">Имя:</label>
+                            <input type="text" id="name" class="contact-form-fields">
+                        </div>
+                        <div class="form-item">
+                            <label for="phone" class="labels">Телефон:</label>
+                            <input type="tel" id="phone" class="contact-form-fields">
+                        </div>
+                        <div class="form-item">
+                            <label for="mail" class="labels">E-mail:</label>
+                            <input type="email" id="mail" class="contact-form-fields">
+                        </div>
+                    </fieldset>
+                    <button class="feedback-btn">
+                        <p class="feedback-btn-text">Отправить</p>
+                    </button>
+                </form>
 
+            </div>
+        </div>
     </main>
 
     <footer>
