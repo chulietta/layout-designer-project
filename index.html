@@ -6,170 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ЖК «Лунное море» Юлия Коронкевич</title>
-
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <header>
-        <div id="logo-part">
+    <header class="bg-white row">
+        <div id="logo-part" class="row flex-grow-1">
             <img class="logo-img" src="/images/logo.svg">
-            <p class="logo-text">Лунное море</p>
+            <p class="common-font text-grey text-18 fw-700">Лунное море</p>
         </div>
-        <div id="menu">
-            <p class="menu-item"><a href="#">Преимущества</a></p>
-            <p class="menu-item"><a href="#">О ЖК</a></p>
-            <p class="menu-item"><a href="#">Места для отдыха</a></p>
-        </div>
+        <nav class="row flex-grow-2">
+            <a class="nav-item common-font text-grey text-14 fw-600" href="#advantages">Преимущества</a>
+            <a class="nav-item common-font text-grey text-14 fw-600" href="#about">О ЖК</a>
+            <a class="nav-item common-font text-grey text-14 fw-600" href="#restplaces">Места для отдыха</a>
+        </nav>
     </header>
 
     <main>
-        <div id="banner">
-            <div><img class="banner-img flex-grow-1" src="/images/logo.svg"></div>
-            <div>
-                <h1 class="banner-h1 flex-grow-1">ЖК «Лунное море»</h1>
-
-            </div>
-            <div>
-                <p class="banner-text flex-grow-1">Место, откуда не хочется улетать</p>
-            </div>
-            <div>
-                <button class="banner-btn flex-grow-1"><p class="banner-btn-text"><a href="#contact-form">Забронировать</a></p></button>
-            </div>
+        <div class="banner col">
+            <img class="banner-img" src="/images/logo.svg">
+            <h1 class="common-font text-white text-52 m-0 fw-500">ЖК «Лунное море»</h1>
+            <p class="common-font text-white text-20 fw-500 m-0">Место, откуда не хочется улетать</p>
+            <button class="btn">
+                <a class="common-font text-white text-18 m-0 fw-200" href="#contact-form">Забронировать</a>
+            </button>
         </div>
-        <div class="section">
-            <div class="block">
-                <div class="advantages-block">
-                    <h2>Уникальный вид</h2>
-                    <p class="sections-text">
+
+        <section>
+            <div id="advantages" class="block row">
+                <div class="advantage col">
+                    <h2 class="common-font text-grey common-font text-24 m-0">Уникальный вид</h2>
+                    <p class="text-12 text-grey common-font">
                         Вид на космос из вашего окна. Мы построили дома с большими окнами, чтобы вы могли наслаждаться метеоритными потоками.
                     </p>
                 </div>
-                <div class="advantages-block">
-                    <h2>Инфраструктура</h2>
-                    <p class="sections-text">
+                <div class="advantage col">
+                    <h2 class="common-font text-grey text-24 m-0">Инфраструктура</h2>
+                    <p class="text-12 text-grey common-font">
                         Прекрасные дороги рядом с домом. Много мест для прогулки. Всего в 200 км. от посёлка находится кольцо гор Кордильеры, на которых вы сможете провести незабываемые выходные.
                     </p>
                 </div>
-                <div class="advantages-block">
-                    <h2>Близость к Москве</h2>
-                    <p class="sections-text">
+                <div class="advantage col">
+                    <h2 class="common-font text-grey common-font text-24 m-0">Близость к Москве</h2>
+                    <p class="text-12 text-grey common-font">
                         При небольшой цене мы располагаемся близко к МКАД. Всего 384 000 километров и вы в самом сердце России.
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="section bg-gray">
-            <div class="block">
+        </section>
+        <section class="bg-gray">
+            <div id="about" class="block row">
                 <div class="text-block">
-                    <h2>О ЖК «Лунное море</h2>
-                    <p class="sections-text">
+                    <h2 class="common-font text-grey common-font text-24 m-0">О ЖК «Лунное море</h2>
+                    <p class="text-12 text-grey common-font">
                         Все чаще жители Москвы предпочитают загородный дом городской квартире, к тому же связь с мегаполисом не теряется – современные скоростные трассы позволяют без труда добираться до столицы и обратно.
                     </p>
-                    <p class="sections-text">
+                    <p class="text-12 text-grey common-font">
                         Мы построили наши дома на самом близком к Солнцу спутнике, всего в 380 тысяч километров от Земли.
                     </p>
                 </div>
-                <div>
-                    <img class="sections-img" src="/images/moon-1.jpg">
-                </div>
+                <img class="img-block" src="/images/moon-1.jpg">
             </div>
-        </div>
-        <div class="section">
-            <div class="block">
-                <div>
-                    <img class="sections-img" src="/images/moon-2.jpg">
-                </div>
+        </section>
+        <section>
+            <div id="restplaces" class="block row">
+                <img class="img-block" src="/images/moon-2.jpg">
                 <div class="text-block">
-                    <h2>Места для отдыха</h2>
-                    <p class="sections-text">
+                    <h2 class="common-font text-grey common-font text-24 m-0">Места для отдыха</h2>
+                    <p class="text-12 text-grey common-font">
                         Луна обладает всеми условиями для комфортного отдыха от большого города. В вашем распоряжении 22 моря и 18 гор. Самое ближайшее кольцо гор всего в 200 километров от вашей квартиры.
                     </p>
-                    <p class="sections-text">
+                    <p class="text-12 text-grey common-font">
                         Дома располагаются в новом районе «Лунные моря». При необходимости есть автобусы до района «Лунный материк».
                     </p>
                 </div>
             </div>
-
-        </div>
-        <div class="section bg-gray">
-            <div class="feedback">
-                <h2>
-                    <a name="contact-form"></a> Оставьте заявку сегодня!</h2>
-                <form class="feedback-form">
+        </section>
+        <section class="bg-gray">
+            <div id="contact-form" class="col">
+                <h2 class="common-font text-grey text-24 m-0">
+                    Оставьте заявку сегодня!</h2>
+                <form>
                     <fieldset>
-                        <legend class="green-legend">
+                        <legend class="common-font text-blue text-18 fw-600">
                             Параметры квартиры
                         </legend>
-                        <div class="form-item">
-                            <label for="rooms" class="labels">Количество комнат:</label>
-                            <select id="rooms" class="param-fields">
+                        <div class="form-item row">
+                            <label for="rooms " class="common-font text-14 label-width">Количество комнат:</label>
+                            <select id="rooms" class="params-fields ">
                                     <option>1</option>
                                     <option>2</option>
                                     <option>3</option>
-                                </select>
+                            </select>
                         </div>
-                        <div class="form-item">
-                            <label for="remont" class="labels">Отделка:</label>
-                            <select id="remont" class="param-fields">
+                        <div class="form-item row">
+                            <label for="remont" class="common-font text-14 label-width">Отделка:</label>
+                            <select id="remont" class="params-fields">
                                     <option>Без отделки</option>
                                     <option>Предчистовая отделка</option>
                                     <option>Чистовая отделка</option>
-                                </select>
+                            </select>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend class="green-legend">
+                        <legend class="common-font text-blue text-18 fw-600">
                             Контактная информация
                         </legend>
-                        <div class="form-item">
-                            <label for="name" class="labels">Имя:</label>
+                        <div class="form-item row">
+                            <label for="name" class="common-font text-14 label-width">Имя:</label>
                             <input type="text" id="name" class="contact-form-fields">
                         </div>
-                        <div class="form-item">
-                            <label for="phone" class="labels">Телефон:</label>
-                            <input type="tel" id="phone" class="contact-form-fields">
+                        <div class="form-item row">
+                            <label for="phone" class="common-font text-14 label-width">Телефон:</label>
+                            <input type="tel" id="phone" class="contact-form-fields ">
                         </div>
-                        <div class="form-item">
-                            <label for="mail" class="labels">E-mail:</label>
-                            <input type="email" id="mail" class="contact-form-fields">
+                        <div class="form-item row">
+                            <label for="mail" class="common-font text-14 label-width">E-mail:</label>
+                            <input type="email" id="mail" class="contact-form-fields ">
                         </div>
                     </fieldset>
                     <button class="feedback-btn">
-                        <p class="feedback-btn-text">Отправить</p>
+                        <p class="common-font text-blue text-16 fw-600 m-0">Отправить</p>
                     </button>
                 </form>
-
             </div>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <div class="section">
-            <div class="footer-section flex-grow-1">
-                <div class="copyright-logo">
-                    <img class="logo-img" src="/images/logo.svg">
-                    <p class="copyright-title">Лунное море</p>
+    <footer class="row bg-dark-grey">
+        <section>
+            <div class="footer-block flex-grow-1 col">
+                <div class="copyright-logo row">
+                    <img class="logo-img " src="/images/logo.svg ">
+                    <p class="common-font text-white text-14 fw-500">Лунное море</p>
                 </div>
                 <div class="copyright">
-                    <p>&copy; 2032 год</p>
+                    <p class="common-font text-white text-12">&copy; 2032 год</p>
                 </div>
             </div>
-            <div class="footer-section flex-grow-1">
-                <h3>Проектная документация</h3>
+            <div class="footer-block flex-grow-1 col">
+                <h3 class="common-font text-white text-16 fw-500">Проектная документация</h3>
                 <ul>
-                    <li>Скачать</li>
-                    <li>Посмотреть на сайте</li>
+                    <li class="common-font text-white text-12 fw-300">Скачать</li>
+                    <li class="common-font text-white text-12 fw-300">Посмотреть на сайте</li>
                 </ul>
             </div>
-            <div class="footer-section flex-grow-1">
-                <h3>О застройщике</h3>
+            <div class="footer-block flex-grow-1 col">
+                <h3 class="common-font text-white text-16 fw-500">О застройщике</h3>
                 <ul>
-                    <li>Отзывы</li>
-                    <li>Сайт компании</li>
+                    <li class="common-font text-white text-12 fw-300">Отзывы</li>
+                    <li class="common-font text-white text-12 fw-300">Сайт компании</li>
                 </ul>
             </div>
-        </div>
+        </section>
     </footer>
 </body>
 
