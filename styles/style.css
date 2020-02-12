@@ -1,11 +1,15 @@
 body {
     display: block;
+    width: 100%;
     margin: 0 auto;
 }
 
 header {
     height: 69px;
-    padding: 0 10px 0 10px;
+    width: 100%;
+    padding: 0 10px;
+    position: fixed;
+    justify-content: space-between;
 }
 
 #logo-part {
@@ -25,7 +29,7 @@ nav {
 }
 
 .nav-item {
-    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
 }
 
@@ -44,6 +48,7 @@ nav {
     background-position-y: -500px;
     justify-content: center;
     align-items: center;
+    padding-top: 69px;
 }
 
 .banner-img {
