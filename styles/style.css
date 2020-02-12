@@ -34,7 +34,7 @@ nav {
 
 .banner {
     height: 404px;
-    background-image: url(/images/banner.png);
+    background-image: url(../images/banner.png);
     background-position-x: center;
     background-position-y: -500px;
     justify-content: center;
