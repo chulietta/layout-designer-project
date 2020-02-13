@@ -61,11 +61,20 @@ nav {
 
 .btn {
     display: inline-block;
-    border: 1px solid white;
     border-radius: 10px;
     background: transparent;
+}
+
+.btn-white {
+    border: 1px solid white;
     padding: 15px;
     margin: 20px;
+}
+
+.btn-green {
+    border: 1px solid #09d3ac;
+    padding: 10px 40px;
+    margin-top: 10px;
 }
 
 a {
@@ -127,15 +136,6 @@ fieldset {
 
 .label-width {
     width: 190px;
-}
-
-.feedback-btn {
-    display: inline-block;
-    border: 1px solid #09d3ac;
-    border-radius: 10px;
-    background: transparent;
-    padding: 10px 40px;
-    margin-top: 10px;
 }
 
 footer {
