@@ -4,7 +4,11 @@ body {
     margin: 0 auto;
 }
 
-header {
+main {
+    padding-top: 69px;
+}
+
+.main-header {
     height: 69px;
     width: 100%;
     padding: 0 10px;
@@ -42,13 +46,11 @@ nav {
 }
 
 .banner {
-    height: 404px;
     background-image: url(../images/banner.png);
     background-position-x: center;
     background-position-y: -500px;
     justify-content: center;
     align-items: center;
-    padding-top: 69px;
 }
 
 .banner-img {
@@ -69,7 +71,7 @@ nav {
     text-decoration: none;
 }
 
-section {
+.main-part {
     display: flex;
     justify-content: center;
     align-items: center;
