@@ -5,18 +5,25 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     color: #303846;
+    background-color: var(--primary-color);
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0 auto;
 }
 
 main {
-    padding-top: 69px;
+    padding-top: var(--header-height);
 }
 
 .main-header {
-    height: 69px;
+    height: var(--header-height);
     width: 100%;
     padding: 0 10px;
     position: fixed;
     justify-content: space-between;
+    background-color: var(--primary-color);
 }
 
 #logo-part {
@@ -69,22 +76,24 @@ nav {
 }
 
 .btn-white {
-    border: 1px solid white;
+    border: 1px solid var(--primary-color);
     padding: 15px;
     margin: 20px;
+    color: var(--primary-color);
 }
 
 .btn-green {
-    border: 1px solid #09d3ac;
+    border: 1px solid var(--feedback-color);
     padding: 10px 40px;
     margin-top: 10px;
+    color: var(--feedback-color);
 }
 
 a {
     text-decoration: none;
 }
 
-.main-part {
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,8 +106,7 @@ a {
     justify-content: space-between;
 }
 
-.advantage {
-    align-items: flex-start;
+.advantage-width {
     width: 310px;
 }
 
@@ -111,7 +119,7 @@ a {
 }
 
 fieldset {
-    border-color: #09d3ac;
+    border-color: var(--feedback-color);
     margin-top: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -141,15 +149,27 @@ fieldset {
 }
 
 footer {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    background-color: var(--footer-background);
+}
+
+.footer-container {
+    width: 1000px;
     height: 212px;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-block {
     min-width: 300px;
     justify-content: flex-start;
     align-items: center;
+    font-size: 12px;
+    font-weight: 300;
 }
 
 .copyright-logo {
@@ -165,10 +185,6 @@ footer {
 
 ul li {
     padding: 2px;
-}
-
-.bg-white {
-    background-color: white;
 }
 
 .bg-gray {
@@ -217,10 +233,6 @@ ul li {
     font-size: 20px;
 }
 
-.text-24 {
-    font-size: 24px;
-}
-
 .text-52 {
     font-size: 52px;
 }
@@ -245,6 +257,17 @@ ul li {
     font-weight: 700;
 }
 
-.m-0 {
+.mx-0 {
+    margin: 0;
+}
+
+.m-0-auto {
     margin: 0 auto;
+}
+
+:root {
+    --header-height: 69px;
+    --primary-color: white;
+    --feedback-color: #09d3ac;
+    --footer-background: #303846;
 }
