@@ -1,3 +1,10 @@
+:root {
+    --header-height: 69px;
+    --primary-color: white;
+    --feedback-color: #09d3ac;
+    --footer-background: #303846;
+}
+
 body {
     display: block;
     width: 100%;
@@ -263,11 +270,4 @@ ul li {
 
 .m-0-auto {
     margin: 0 auto;
-}
-
-:root {
-    --header-height: 69px;
-    --primary-color: white;
-    --feedback-color: #09d3ac;
-    --footer-background: #303846;
 }
