@@ -1,8 +1,10 @@
 :root {
     --header-height: 69px;
     --primary-color: white;
+    --secondary-color: #f7f7f7;
     --feedback-color: #09d3ac;
-    --footer-background: #303846;
+    --main-text-color: #303846;
+    --footer-bg: #303847;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
     margin: 0 auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    color: #303846;
+    color: var(--main-text-color);
     background-color: var(--primary-color);
 }
 
@@ -33,7 +35,7 @@ main {
     background-color: var(--primary-color);
 }
 
-#logo-part {
+.logo-part {
     justify-content: flex-start;
     align-items: center;
 }
@@ -52,6 +54,7 @@ nav {
 .nav-item {
     padding-right: 20px;
     text-decoration: none;
+    color: var(--main-text-color);
 }
 
 .flex-grow-1 {
@@ -68,6 +71,7 @@ nav {
     background-position-y: -500px;
     justify-content: center;
     align-items: center;
+    color: var(--primary-color)
 }
 
 .banner-img {
@@ -80,20 +84,20 @@ nav {
     display: inline-block;
     border-radius: 10px;
     background: transparent;
+    padding: 15px 30px;
+    margin: 20px 0;
 }
 
 .btn-white {
     border: 1px solid var(--primary-color);
-    padding: 15px;
-    margin: 20px;
     color: var(--primary-color);
 }
 
-.btn-green {
+.feedback-btn {
     border: 1px solid var(--feedback-color);
-    padding: 10px 40px;
-    margin-top: 10px;
     color: var(--feedback-color);
+    font-size: 16px;
+    font-weight: 600;
 }
 
 a {
@@ -133,6 +137,12 @@ fieldset {
     width: 400px;
 }
 
+.feedback-legend {
+    color: var(--feedback-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
 .form-item {
     align-items: center;
     justify-content: flex-start;
@@ -160,7 +170,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    background-color: var(--footer-background);
+    background-color: var(--footer-bg);
 }
 
 .footer-container {
@@ -186,7 +196,7 @@ footer {
     margin-top: -12px;
 }
 
-.copyright {
+.self-left {
     align-self: flex-start;
 }
 
@@ -195,11 +205,7 @@ ul li {
 }
 
 .bg-gray {
-    background-color: #f7f7f7;
-}
-
-.bg-dark-grey {
-    background-color: #303846;
+    background-color: var(--secondary-color);
 }
 
 .row {
@@ -213,15 +219,11 @@ ul li {
 }
 
 .text-white {
-    color: white;
+    color: var(--primary-color);
 }
 
 .text-grey {
-    color: #303846;
-}
-
-.text-blue {
-    color: #09d3ac;
+    color: var(--main-text-color);
 }
 
 .text-12 {
