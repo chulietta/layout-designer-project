@@ -112,12 +112,15 @@ a {
     padding-bottom: 80px;
 }
 
-.block {
+.content-width {
     width: 1000px;
+}
+
+.justify {
     justify-content: space-between;
 }
 
-.advantage-width {
+.block-width {
     width: 310px;
 }
 
@@ -196,7 +199,7 @@ footer {
     margin-top: -12px;
 }
 
-.self-left {
+.self-start {
     align-self: flex-start;
 }
 
@@ -267,7 +270,8 @@ ul li {
 }
 
 .mx-0 {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .m-0-auto {
